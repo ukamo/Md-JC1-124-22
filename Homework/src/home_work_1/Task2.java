@@ -44,7 +44,14 @@ public class Task2 {
                                         // 1 выражение False, тк не больше 20, поэтому идем ко второму выражению 44 в двоичном это 101100 - сдвинаем вправо на 2 - это 11  в десятичном, далее делим на 7,Тк у int нет дробное - получается 1
         //System.out.println(Integer.toBinaryString(44));
         System.out.println(result6);
-
-
+        b = 2;
+        c = 8;
+        // (5 + 7 > 20 ? 68 >= 68 : 22 * 2 >> 2++) / --8
+        // int result7 = (5 + 7 > 20 ? 68 >= 68 : 22 * 2 >> b++) / --c;
+        //System.out.println(result7);
+        boolean result8 = 6 - 2 > 3 && 12 * 12 <= 119;
+        System.out.println(result8);
+        boolean result9 = true && false;
+        System.out.println(result9);
     }
 }
