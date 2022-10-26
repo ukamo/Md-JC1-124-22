@@ -10,10 +10,9 @@ public class Task1 {
         System.out.print("Input a number 1: ");
         // двоичный код первого числа 3 = 11
         int numberSave1 = inputNumber1.nextInt();
-        Scanner inputNumber2 = new Scanner(System.in);
         System.out.print("Input a number 2: ");
         // двоичный код второго числа 5 = 101
-        int numberSave2 = inputNumber2.nextInt();
+        int numberSave2 = inputNumber1.nextInt();
         int saveByteAndResult = numberSave1&numberSave2;
         System.out.println(saveByteAndResult);
         //двоичный код результата с & 1 = в двоичном 01
