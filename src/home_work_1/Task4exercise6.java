@@ -1,9 +1,8 @@
 package home_work_1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Task5exercise6 {
+public class Task4exercise6 {
     public static void main(String[] args) {
         System.out.print ("Введите год: ");
         Scanner input = new Scanner(System.in);

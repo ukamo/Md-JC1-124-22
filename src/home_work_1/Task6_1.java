@@ -3,7 +3,7 @@ package home_work_1;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Task6 {
+public class Task6_1 {
     public static void main(String[] args) {
         System.out.print ("Введите имя: ");
         Scanner input = new Scanner(System.in);
