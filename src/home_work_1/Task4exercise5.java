@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task4exercise5 {
     public static void main(String[] args) {
-        System.out.print ("Введите символ 1: ");
+        System.out.print ("Введите 1 английский символ: ");
         Scanner input = new Scanner(System.in);
         int numberFromUser = input.nextInt();
      /*   if (numberFromUser >= 65 && numberFromUser <= 90 ||
