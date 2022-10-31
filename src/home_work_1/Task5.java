@@ -30,5 +30,7 @@ public class Task5 {
         } else {
             return false;
         }
+
+        // return weekday || dayOfWeekends;
     }
 }
