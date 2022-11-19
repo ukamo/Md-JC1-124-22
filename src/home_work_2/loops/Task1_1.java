@@ -14,8 +14,7 @@ public class Task1_1 {
             if (numberFromUser1 >= minRez && numberFromUser1 <= maxRez) {
                 long resultNumb = 1;
                 for (long i = 1; i <= numberFromUser1; i++) {
-                    //resultNumb = resultNumb * i;
-                    long y = resultNumb;
+
                     resultNumb = resultNumb * i;
                 }
                 System.out.println(resultNumb);
