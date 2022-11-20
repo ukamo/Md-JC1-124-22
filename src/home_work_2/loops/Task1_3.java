@@ -13,7 +13,7 @@ public class Task1_3 {
         for (int i = 1; i <= numberFromUser2; i++){
             resultOfRoot = numberFromUser1 * resultOfRoot;
         }
-        System.out.println("Ваш результат: " + resultOfRoot);
+        System.out.print(numberFromUser1 + " ^ "+ numberFromUser2 + " = " + resultOfRoot);
 
     }
 }
