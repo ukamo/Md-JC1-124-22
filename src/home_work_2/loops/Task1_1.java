@@ -14,8 +14,14 @@ public class Task1_1 {
             if (numberFromUser1 >= minRez && numberFromUser1 <= maxRez) {
                 long resultNumb = 1;
                 for (long i = 1; i <= numberFromUser1; i++) {
-
+                    if (i!=numberFromUser1){
+                        System.out.print(i + " * ");
+                    } else {
+                        System.out.print(i + " = ");
+                    }
                     resultNumb = resultNumb * i;
+
+
                 }
                 System.out.println(resultNumb);
             } else {
