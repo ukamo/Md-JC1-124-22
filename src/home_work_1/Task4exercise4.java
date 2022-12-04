@@ -3,7 +3,21 @@ package home_work_1;
 import java.util.Scanner;
 
 public class Task4exercise4 {
-    public static void main(String[] args) {
+
+    public String ByteOrKilobyte(Double number, boolean resultOfAnswer) {
+        double numberOfByte = 1024;
+        if (resultOfAnswer) {
+            double resultByte = number * numberOfByte;
+            String rez1 = "Перевод в байты числа " + number + " = " + resultByte;
+            return rez1;
+        } else {
+            double resultKiloByte = number / numberOfByte;
+            String rez2 ="Перевод в килобайты числа " + number + " = " + resultKiloByte;
+            return rez2;
+        }
+    }
+}
+    /*public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print ("Введите число 1: ");
         int numberFromUser = input.nextInt();
@@ -31,6 +45,4 @@ public class Task4exercise4 {
             System.out.print ("Вы ввели неверные данные");
 
         } */
-    }
 
-}
