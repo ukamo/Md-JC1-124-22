@@ -15,7 +15,7 @@ public class DataContainer<T> {
         if (item == null) {
             return -1;
         } else {
-            for (int i = 1; i < data.length; i++) {
+            for (int i = 0; i < data.length-1; i++) {
                 if (data[i] == null) {
                     data[i] = item;
                     return i;
@@ -27,7 +27,7 @@ public class DataContainer<T> {
                 //  get(0);
                 return 0;
             } else {
-                for (int i = 1; i < data.length; i++) {
+                for (int i = 0; i < data.length; i++) {
                     if (data[i] == null) {
                         data[i] = item;
                         return i;
@@ -39,8 +39,8 @@ public class DataContainer<T> {
     }
 
     T get(int index) {
-        if (index >= 0 && index < data.length) {
-            return data[index];
+        if (index >= 0 && index < this.data.length) {
+            return this.data[index];
         }
         return null;
 
@@ -65,8 +65,9 @@ public class DataContainer<T> {
 
             }
             data = newData;
+            return true;
         }
-        return true;
+        return false;
     }
 
     boolean delete (T item) {
@@ -102,9 +103,9 @@ public class DataContainer<T> {
 
         int emp = data.length - 1;
         if (emp == -1)
-            return "[]";
+            return "{}";
         StringBuilder b = new StringBuilder();
-        b.append('[');
+        b.append('{');
         for (int i = 0, y = 0; i < data.length; i++) {
             if (data[i] == null) {
                 continue;
@@ -112,7 +113,7 @@ public class DataContainer<T> {
                 b.append(String.valueOf(data[i]));
             }
             if (i == emp)
-                return b.append(']').toString();
+                return b.append('}').toString();
             b.append(", ");
         }
         return null;
