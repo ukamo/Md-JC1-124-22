@@ -5,10 +5,7 @@ import java.util.Comparator;
 
 public class DataContainer<T> {
     private T[] data;
-    // private List<T> arrColl = new ArrayList<T>();
-
-
-    //конструктор
+   //конструктор
     public DataContainer(T[] data) {
         this.data = data;
 
@@ -42,7 +39,7 @@ public class DataContainer<T> {
     }
 
     T get(int index) {
-        if (index > 0 && index < data.length) {
+        if (index >= 0 && index < data.length) {
             return data[index];
         }
         return null;
