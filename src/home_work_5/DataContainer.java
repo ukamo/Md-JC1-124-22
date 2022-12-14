@@ -38,7 +38,7 @@ public class DataContainer<T> {
         return -1;
     }
 
-    T get(int index) {
+    public T get(int index) {
         if (index >= 0 && index < this.data.length) {
             return this.data[index];
         }
@@ -46,11 +46,11 @@ public class DataContainer<T> {
 
     }
 
-    T[] getItems() {
+    public T[] getItems() {
         return data;
     }
 
-    boolean delete(int index) {
+    public boolean delete(int index) {
         if (index > data.length || index < 0) {
             return false;
         }
@@ -70,7 +70,7 @@ public class DataContainer<T> {
         return false;
     }
 
-    boolean delete (T item) {
+    public boolean delete (T item) {
         if (item == null) {
             return false;
         }
