@@ -1,5 +1,7 @@
-package home_work_6;
+package home_work_6.tests;
 
+import home_work_6.EasySearch;
+import home_work_6.interfaces.ISearchEngine;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;

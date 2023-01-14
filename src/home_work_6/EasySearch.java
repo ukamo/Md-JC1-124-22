@@ -1,5 +1,7 @@
 package home_work_6;
 
+import home_work_6.interfaces.ISearchEngine;
+
 public class EasySearch implements ISearchEngine {
 
     @Override
@@ -50,5 +52,6 @@ public class EasySearch implements ISearchEngine {
                 || str.equals(":") || str.equals(";") || str.equals("\r")
                 || str.equals("\"");
     }
+
 
 }
